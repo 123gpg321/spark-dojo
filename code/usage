@@ -1,0 +1,13 @@
+cd /home/ulrich/Desktop/movielense/code
+
+#To run locally using 2 cores you can for example use:
+
+spark-submit --master local[2] server.py
+
+
+#API
+http://0.0.0.0:5432/1/ratings/top/<some number>
+
+http://0.0.0.0:5432/1/ratings/<int:movie_id>", methods=["GET"])
+ 
+http://0.0.0.0:5432/1/<int:user_id>/ratings"
